@@ -1,0 +1,136 @@
+body {
+  background-color: lightskyblue;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding-top: 50px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.input-container {
+  margin-top: 30px;
+}
+
+input {
+  padding: 10px;
+  width: 220px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: green;
+}
+
+h1, h2, p {
+  color: white;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.weather-info,
+.country-info {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+  width: 350px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+img {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.loading {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dark Mode Styles */
+.App.dark {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.App.dark h1,
+.App.dark h2,
+.App.dark p {
+  color: #f0f0f0;
+}
+
+.App.dark input,
+.App.dark button {
+  background-color: #222;
+  color: white;
+  border: 1px solid #444;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+  input {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  .result-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather-info,
+  .country-info {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .toggle-btn {
+    font-size: 14px;
+  }
+}
+
